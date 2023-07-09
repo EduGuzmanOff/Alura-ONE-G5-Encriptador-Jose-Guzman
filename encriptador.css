@@ -1,0 +1,157 @@
+html{
+    font-family: "Montserrat", sans-serif;
+    background: #DBF0F6;
+}
+body{
+    width: auto;
+    height: 100%;
+}
+
+.titulo-principal{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+.contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin: 10px 10px 10px 10px;
+
+}
+
+.Desencriptar, .Encriptar{
+    width: 45%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.boton{
+    display: flex;
+    justify-content: space-around;
+    align-content: stretch;
+}
+
+.boton-encriptar, .boton-desencriptar, .boton-copiar{
+    width: 45%;
+    height: 70px;
+    margin-bottom: 0.5em;
+    font-size: 28px;
+    border: 1px solid #0A3871;
+    border-radius: 15px;
+    background: #0A3871;
+    transition: 0.1s;
+    order: 2;
+}
+
+.boton-encriptar, .boton-copiar{
+    
+    color: white;
+}
+.boton-desencriptar{
+    background: white;
+    color: #0875FB;
+}
+
+.boton-encriptar:hover, .boton-desencriptar:hover, .boton-copiar:hover{
+    transform: scale(1.01,1.01);
+
+}
+textarea{
+    
+    width: 70%;
+    height: 641px;
+    flex-shrink: 0;
+    resize: none;
+    border: 1px solid #3A98DC;
+}
+
+.texto-input{
+    width: 100%;
+}
+
+.texto-output {
+    width: 100%;
+    background-image: url(img/Muñecomuneco.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+footer{
+    position: relative;
+    text-align: center;
+
+}
+@media screen and (max-width:700px ){
+    .titulo-principal{
+        display: flex;
+        justify-content: center;
+      
+        align-items: center;
+        font-size: 80%;
+
+    }
+    .logo{
+        width: 3em;
+        height: 3em;
+    }
+    
+    main{
+        min-height: 700px;
+    }
+    .contenido{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        min-height: 700px;
+        height: 100%;
+    }
+    .Desencriptar, .Encriptar{
+        width: 100%;
+        height: 400px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    textarea{
+        width: 90%;
+        height: 70%;
+        
+    }
+    .texto-output{
+        background-size: 50%;
+    }
+    .boton{
+        display: flex;
+        justify-content: space-around;
+    }
+   
+    .boton-encriptar, .boton-desencriptar, .boton-copiar{
+        width: 45%;
+        height: 70px;
+        margin-bottom: 0.5em;
+        border: 1px solid #0A3871;
+        border-radius: 10px;
+        background: #0A3871;
+        transition: 0.1s;
+        order: 2;
+        flex-shrink: 3;
+        font-size: 5vw;
+        font-weight: 400;
+    }
+    .boton-desencriptar{
+        background: white;
+        color: #0875FB;
+    }
+}

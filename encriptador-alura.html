@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador - Alura</title>
+    <link rel="stylesheet" href="encriptador.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body>
+    <header>
+        <div class="titulo-principal">
+            <h1 class="titulo">Encriptador - Alura</h1>
+            <img class="logo" src="./img/aluralogo.png" alt="Logo Alura">
+        </div>
+        
+    </header>
+    <main >
+        <div class="contenido">
+            <section class="Encriptar">
+                
+                    <textarea class="texto-input" id="texto-input" cols="30" rows="10" placeholder="Inserta el texto aquí"></textarea>
+                    <div class="boton">
+                        <button class="boton-encriptar" onclick=btnEncriptar()>Encriptar</button>
+                        <button class="boton-desencriptar" onclick=btnDesencriptar()>Desencriptar</button>
+                        
+                    </div>
+            </section>
+            <section class="Desencriptar">
+                
+                    <textarea class="texto-output" id="texto-output" cols="30" rows="10"></textarea>
+                    <div class="boton">
+                        <button class="boton-copiar" onclick=btnCopiar()>Copiar</button>
+                    </div>
+                    
+
+            </section>
+        </div>
+        
+        
+    </main>
+
+    <footer>
+        <div class="pie-pagina">
+            <p> Jose Eduardo Guzmán Tula - 2023 &copy</p>
+        </div>
+        
+    </footer>
+
+<script src="encriptador.js"></script>
+</body>
+</html>
