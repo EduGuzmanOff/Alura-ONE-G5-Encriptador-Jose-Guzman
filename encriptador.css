@@ -40,12 +40,19 @@ body{
     display: flex;
     justify-content: space-around;
     align-content: stretch;
+    height: 80px;
 }
-
+.boton_2{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.boton_2 h7{
+    font-size: xx-small;
+}
 .boton-encriptar, .boton-desencriptar, .boton-copiar{
     width: 45%;
-    height: 70px;
-    margin-bottom: 0.5em;
+    height: 60px;
     font-size: 28px;
     border: 1px solid #0A3871;
     border-radius: 15px;
@@ -70,7 +77,7 @@ body{
 textarea{
     
     width: 70%;
-    height: 641px;
+    height: 640px;
     flex-shrink: 0;
     resize: none;
     border: 1px solid #3A98DC;
